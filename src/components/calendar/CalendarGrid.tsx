@@ -4,11 +4,12 @@ import { getDaysInMonth, getFirstDayOfMonth } from '../../utils/dateUtils';
 
 interface CalendarGridProps {
     currentDate: Date;
+    onDateClick: (date: Date) => void;
 }
 
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const CalendarGrid: React.FC<CalendarGridProps> = ({ currentDate }) => {
+const CalendarGrid: React.FC<CalendarGridProps> = ({ currentDate, onDateClick }) => {
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
 
@@ -43,6 +44,14 @@ const CalendarGrid: React.FC<CalendarGridProps> = ({ currentDate }) => {
                 {days.map((day, index) => (
                     <div
                         key={index}
+                        onClick={() => {
+                            if (day) {
+                                // Create a date object for the clicked day
+                                // Note: We use the year and month from props.
+                                const clickedDate = new Date(year, month, day);
+                                onDateClick(clickedDate);
+                            }
+                        }}
                         className={`${day ? 'bg-bg-secondary hover:bg-bg-tertiary cursor-pointer' : ''} h-24 p-2 relative transition-colors`}
                     >
                         {day && (

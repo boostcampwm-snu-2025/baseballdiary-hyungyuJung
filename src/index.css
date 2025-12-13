@@ -7,19 +7,24 @@
   --bg-primary: #121212;
   --bg-secondary: #1E1E1E;
   --bg-tertiary: #2C2C2C;
-  
+
   --text-primary: #E0E0E0;
   --text-secondary: #A0A0A0;
   --text-accent: #FFFFFF;
 
   /* Baseball-specific Accents */
-  --accent-win: #4CAF50;    /* Success Green */
-  --accent-loss: #E53935;   /* Danger Red */
-  --accent-draw: #FFC107;   /* Warning Amber */
-  --accent-cancel: #9E9E9E; /* Grey */
-  
+  --accent-win: #4CAF50;
+  /* Success Green */
+  --accent-loss: #E53935;
+  /* Danger Red */
+  --accent-draw: #FFC107;
+  /* Warning Amber */
+  --accent-cancel: #9E9E9E;
+  /* Grey */
+
   /* Brand/Interactive */
-  --brand-primary: #3178C6; /* KBO Blue-ish */
+  --brand-primary: #3178C6;
+  /* KBO Blue-ish */
 }
 
 body {
@@ -31,4 +36,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-primary);
   color: var(--text-primary);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s ease-out forwards;
 }
