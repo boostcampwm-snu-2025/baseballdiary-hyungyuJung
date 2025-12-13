@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Premium Deep Dark Theme Colors */
+  --bg-primary: #121212;
+  --bg-secondary: #1E1E1E;
+  --bg-tertiary: #2C2C2C;
+  
+  --text-primary: #E0E0E0;
+  --text-secondary: #A0A0A0;
+  --text-accent: #FFFFFF;
+
+  /* Baseball-specific Accents */
+  --accent-win: #4CAF50;    /* Success Green */
+  --accent-loss: #E53935;   /* Danger Red */
+  --accent-draw: #FFC107;   /* Warning Amber */
+  --accent-cancel: #9E9E9E; /* Grey */
+  
+  /* Brand/Interactive */
+  --brand-primary: #3178C6; /* KBO Blue-ish */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}

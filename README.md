@@ -26,16 +26,16 @@
 ## 🛠 Tech Stack
 
 ### Frontend
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white"/> 
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat&logo=Tailwind CSS&logoColor=white"/>
 
-<!-- 
-### State Management & Data
-//<img src="https://img.shields.io/badge/Zustand-orange?style=flat"/> 
+## 🚀 Setup
 
-//### Deployment
-//<img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=Vercel&logoColor=white"/>
--->
+Run the following commands to start the development server:
 
-## 🚀 Getting Started
+```bash
+# Install dependencies
+npm install
 
-(추후 추가 예정)
+# Start development server
+npm run dev
+```
