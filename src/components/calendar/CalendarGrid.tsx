@@ -6,6 +6,8 @@ interface CalendarGridProps {
     currentDate: Date;
 }
 
+const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
 const CalendarGrid: React.FC<CalendarGridProps> = ({ currentDate }) => {
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
@@ -24,8 +26,6 @@ const CalendarGrid: React.FC<CalendarGridProps> = ({ currentDate }) => {
     for (let i = 1; i <= daysInMonth; i++) {
         days.push(i);
     }
-
-    const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
     return (
         <div className="w-full max-w-4xl mx-auto p-4">
