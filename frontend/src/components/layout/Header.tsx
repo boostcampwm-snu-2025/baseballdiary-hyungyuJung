@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { KBO_TEAMS } from '../../constants/baseball';
+import { KBO_TEAMS, getTeamDisplay } from '../../constants/baseball';
 import { baseballApi } from '../../api/baseballApi';
 import { useToast } from '../../context/ToastContext';
 
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
                 >
                     <option value="">Select Team</option>
                     {KBO_TEAMS.map(team => (
-                        <option key={team} value={team}>{team}</option>
+                        <option key={team} value={team}>{getTeamDisplay(team)}</option>
                     ))}
                 </select>
             </div>

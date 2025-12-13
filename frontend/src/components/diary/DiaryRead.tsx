@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Diary } from '../../types/Diary';
 import { formatDate } from '../../utils/dateUtils';
-import { VIEWING_TYPES } from '../../constants/baseball';
+import { VIEWING_TYPES, getTeamDisplay } from '../../constants/baseball';
 
 interface DiaryReadProps {
     diary: Diary;
@@ -54,14 +54,14 @@ const DiaryRead: React.FC<DiaryReadProps> = ({ diary, onEdit, onClose, onDelete 
                 <section className="bg-bg-tertiary rounded-2xl p-6 flex flex-col items-center gap-4">
                     <div className="flex w-full justify-between items-center max-w-lg">
                         <div className="flex flex-col items-center gap-2 flex-1">
-                            <span className="text-lg font-bold text-text-primary">{gameInfo.myTeam}</span>
+                            <span className="text-lg font-bold text-text-primary">{getTeamDisplay(gameInfo.myTeam)}</span>
                             <span className={`text-4xl font-mono font-bold ${gameInfo.myScore > gameInfo.opponentScore ? 'text-brand-primary' : 'text-text-secondary'}`}>
                                 {gameInfo.myScore}
                             </span>
                         </div>
                         <div className="text-text-secondary font-bold text-xl">VS</div>
                         <div className="flex flex-col items-center gap-2 flex-1">
-                            <span className="text-lg font-bold text-text-primary">{gameInfo.opponentTeam}</span>
+                            <span className="text-lg font-bold text-text-primary">{getTeamDisplay(gameInfo.opponentTeam)}</span>
                             <span className={`text-4xl font-mono font-bold ${gameInfo.opponentScore > gameInfo.myScore ? 'text-brand-primary' : 'text-text-secondary'}`}>
                                 {gameInfo.opponentScore}
                             </span>

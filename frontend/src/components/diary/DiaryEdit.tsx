@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Diary, GameResult, ViewingType } from '../../types/Diary';
-import { KBO_TEAMS, VIEWING_TYPES } from '../../constants/baseball';
+import { KBO_TEAMS, VIEWING_TYPES, getTeamDisplay } from '../../constants/baseball';
 import { formatDate } from '../../utils/dateUtils';
 
 interface DiaryEditProps {
@@ -70,7 +70,7 @@ const DiaryEdit: React.FC<DiaryEditProps> = ({ diary, onCancel, onSave }) => {
                                     className="bg-bg-tertiary text-text-primary p-3 rounded-lg border border-transparent focus:border-brand-primary outline-none"
                                 >
                                     <option value="">팀 선택</option>
-                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{team}</option>)}
+                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{getTeamDisplay(team)}</option>)}
                                 </select>
                             </div>
 
@@ -81,7 +81,7 @@ const DiaryEdit: React.FC<DiaryEditProps> = ({ diary, onCancel, onSave }) => {
                                     className="bg-bg-tertiary text-text-primary p-3 rounded-lg border border-transparent focus:border-brand-primary outline-none"
                                 >
                                     <option value="">팀 선택</option>
-                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{team}</option>)}
+                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{getTeamDisplay(team)}</option>)}
                                 </select>
                             </div>
                         </div>

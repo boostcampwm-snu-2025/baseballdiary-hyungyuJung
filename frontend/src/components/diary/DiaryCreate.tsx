@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import type { Diary, GameResult } from '../../types/Diary';
-import { KBO_TEAMS, VIEWING_TYPES } from '../../constants/baseball';
+import { KBO_TEAMS, VIEWING_TYPES, getTeamDisplay } from '../../constants/baseball';
 import { baseballApi } from '../../api/baseballApi';
 import { formatDate } from '../../utils/dateUtils';
 import { useToast } from '../../context/ToastContext';
@@ -120,7 +120,7 @@ const DiaryCreate: React.FC<DiaryCreateProps> = ({ date, onCancel, onSubmit }) =
                                     className="bg-bg-tertiary text-text-primary p-3 rounded-lg border border-transparent focus:border-brand-primary outline-none"
                                 >
                                     <option value="">팀 선택</option>
-                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{team}</option>)}
+                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{getTeamDisplay(team)}</option>)}
                                 </select>
                             </div>
 
@@ -132,7 +132,7 @@ const DiaryCreate: React.FC<DiaryCreateProps> = ({ date, onCancel, onSubmit }) =
                                     className="bg-bg-tertiary text-text-primary p-3 rounded-lg border border-transparent focus:border-brand-primary outline-none"
                                 >
                                     <option value="">팀 선택</option>
-                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{team}</option>)}
+                                    {KBO_TEAMS.map(team => <option key={team} value={team}>{getTeamDisplay(team)}</option>)}
                                 </select>
                             </div>
                         </div>

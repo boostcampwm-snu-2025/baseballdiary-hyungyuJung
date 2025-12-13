@@ -3,6 +3,7 @@ import type { DiarySummary } from '../../types/Diary';
 import { baseballApi } from '../../api/baseballApi';
 import { getDaysInMonth, getFirstDayOfMonth, formatDate } from '../../utils/dateUtils';
 import { useToast } from '../../context/ToastContext';
+import { getTeamDisplay } from '../../constants/baseball';
 
 interface CalendarGridProps {
     currentDate: Date;
@@ -95,9 +96,8 @@ const CalendarGrid: React.FC<CalendarGridProps> = ({ currentDate, onDateClick, r
                                                         summary.result === 'draw' ? 'bg-accent-draw' : 'bg-gray-400'}
                                             `}></div>
 
-                                            {/* Opponent Team Name - Large Font */}
                                             <div className="text-sm font-bold text-text-primary truncate w-full text-center">
-                                                {summary.opponentTeam}
+                                                {getTeamDisplay(summary.opponentTeam)}
                                             </div>
                                         </div>
                                     )}
