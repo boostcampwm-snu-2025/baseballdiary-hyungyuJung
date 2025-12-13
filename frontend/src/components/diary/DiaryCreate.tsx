@@ -52,7 +52,6 @@ const DiaryCreate: React.FC<DiaryCreateProps> = ({ date, onCancel, onSubmit }) =
                             broadcaster: data.broadcaster
                         }
                     }));
-                    showToast('Game data auto-filled!', 'success');
                 }
             } catch (error) {
                 console.warn("Auto-fill failed", error);

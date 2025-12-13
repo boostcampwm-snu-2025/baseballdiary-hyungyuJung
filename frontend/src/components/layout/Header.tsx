@@ -28,7 +28,6 @@ const Header: React.FC = () => {
         if (newTeam) {
             try {
                 await baseballApi.updateUserTeam(newTeam);
-                showToast(`Favorite team updated to ${newTeam}!`, 'success');
             } catch (_error) {
                 showToast('Failed to update favorite team', 'error');
                 // Revert state if needed? For now, we trust.

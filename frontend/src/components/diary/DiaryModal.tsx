@@ -46,7 +46,6 @@ const DiaryModal: React.FC<DiaryModalProps> = ({ isOpen, onClose, selectedDate }
     const handleCreate = async (data: Omit<Diary, 'id' | 'createdAt' | 'updatedAt'>) => {
         try {
             await baseballApi.createDiary(data);
-            showToast("Diary created successfully!", 'success');
             if (selectedDate) {
                 const dateStr = formatDate(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate());
                 const newData = await baseballApi.getDiary(dateStr);
@@ -63,7 +62,6 @@ const DiaryModal: React.FC<DiaryModalProps> = ({ isOpen, onClose, selectedDate }
         try {
             const dateStr = formatDate(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate());
             await baseballApi.updateDiary(dateStr, data);
-            showToast("Diary updated successfully!", 'success');
             setDiaryData(data);
             setMode('read');
         } catch (_error) {
@@ -77,7 +75,6 @@ const DiaryModal: React.FC<DiaryModalProps> = ({ isOpen, onClose, selectedDate }
         try {
             const dateStr = formatDate(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate());
             await baseballApi.deleteDiary(dateStr);
-            showToast("Diary deleted", 'info');
             onClose();
         } catch (_error) {
             showToast("Failed to delete diary", 'error');
