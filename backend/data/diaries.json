@@ -3,19 +3,76 @@
     "date": "2025-12-13",
     "gameInfo": {
       "myTeam": "Lotte Giants",
-      "opponentTeam": "Samsung Lions",
-      "myScore": 1,
-      "opponentScore": 14,
+      "opponentTeam": "Hanwha Eagles",
+      "myScore": 13,
+      "opponentScore": 16,
       "result": "loss",
-      "stadium": "대구삼성라이온즈파크",
-      "broadcaster": "SPOTV"
+      "stadium": "사직야구장",
+      "broadcaster": "MBC Sports+"
+    },
+    "viewingInfo": {
+      "type": "direct"
+    },
+    "content": "13점을 내고 지네 ㅠㅠ",
+    "id": "1765632986162",
+    "createdAt": "2025-12-13T13:36:26.162Z",
+    "updatedAt": "2025-12-13T13:36:26.162Z"
+  },
+  {
+    "date": "2025-12-01",
+    "gameInfo": {
+      "myTeam": "Lotte Giants",
+      "opponentTeam": "Doosan Bears",
+      "myScore": 11,
+      "opponentScore": 11,
+      "result": "draw",
+      "stadium": "사직야구장",
+      "broadcaster": "SBS Sports"
     },
     "viewingInfo": {
       "type": "home"
     },
-    "content": "대패 ㅠㅠ",
-    "id": "1765631832653",
-    "createdAt": "2025-12-13T13:17:12.653Z",
-    "updatedAt": "2025-12-13T13:17:12.653Z"
+    "content": "비겼다",
+    "id": "1765634479308",
+    "createdAt": "2025-12-13T14:01:19.308Z",
+    "updatedAt": "2025-12-13T14:01:19.308Z"
+  },
+  {
+    "date": "2025-12-23",
+    "gameInfo": {
+      "myTeam": "Lotte Giants",
+      "opponentTeam": "LG Twins",
+      "myScore": 5,
+      "opponentScore": 1,
+      "result": "win",
+      "stadium": "잠실야구장",
+      "broadcaster": "KBS N Sports"
+    },
+    "viewingInfo": {
+      "type": "home"
+    },
+    "content": "오 드디어 이김",
+    "id": "1765634496232",
+    "createdAt": "2025-12-13T14:01:36.232Z",
+    "updatedAt": "2025-12-13T14:01:36.232Z"
+  },
+  {
+    "date": "2025-11-12",
+    "gameInfo": {
+      "myTeam": "Lotte Giants",
+      "opponentTeam": "Hanwha Eagles",
+      "myScore": 13,
+      "opponentScore": 16,
+      "result": "loss",
+      "stadium": "사직야구장",
+      "broadcaster": "MBC Sports+"
+    },
+    "viewingInfo": {
+      "type": "home"
+    },
+    "content": "ㅠㅠ 한화한테 지냐",
+    "id": "1765634513325",
+    "createdAt": "2025-12-13T14:01:53.325Z",
+    "updatedAt": "2025-12-13T14:01:53.325Z"
   }
 ]

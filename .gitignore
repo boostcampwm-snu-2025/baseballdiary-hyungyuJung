@@ -113,6 +113,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+/backend/data/diaries.json
+/backend/data/diary-summaries.json
 
 # OS
 .DS_Store

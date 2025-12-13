@@ -25,3 +25,9 @@ export interface Diary {
     createdAt: string; // ISO Timestamp
     updatedAt: string; // ISO Timestamp
 }
+
+export interface DiarySummary {
+    date: string;
+    result: GameResult;
+    opponentTeam: string;
+}

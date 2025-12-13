@@ -5,6 +5,7 @@ const router = express.Router();
 
 const DATA_DIR = path.join(__dirname, '../data');
 const DIARY_FILE = path.join(DATA_DIR, 'diaries.json');
+const SUMMARY_FILE = path.join(DATA_DIR, 'diary-summaries.json');
 
 // Helper to read diaries
 const getDiaries = () => {
@@ -22,6 +23,64 @@ const saveDiaries = (diaries) => {
     fs.writeFileSync(DIARY_FILE, JSON.stringify(diaries, null, 2));
 };
 
+// Helper to read summaries
+const getSummaries = () => {
+    if (!fs.existsSync(SUMMARY_FILE)) return [];
+    try {
+        const data = fs.readFileSync(SUMMARY_FILE, 'utf8');
+        return JSON.parse(data);
+    } catch (e) {
+        return [];
+    }
+};
+
+// Helper to save summaries
+const saveSummaries = (summaries) => {
+    fs.writeFileSync(SUMMARY_FILE, JSON.stringify(summaries, null, 2));
+};
+
+// Initial Sync: Populate summaries if missing but diaries exist
+const initialSync = () => {
+    const diaries = getDiaries();
+    const summaries = getSummaries();
+
+    if (diaries.length > 0 && summaries.length === 0) {
+        console.log('Populating diary-summaries.json from diaries.json...');
+        const newSummaries = diaries.map(d => ({
+            date: d.date,
+            result: d.gameInfo.result,
+            opponentTeam: d.gameInfo.opponentTeam
+        }));
+        saveSummaries(newSummaries);
+    }
+};
+initialSync();
+
+
+// Sync Function: Updates summary based on full diary object
+const updateSummary = (diary, isDelete = false) => {
+    let summaries = getSummaries();
+
+    if (isDelete) {
+        summaries = summaries.filter(s => s.date !== diary.date);
+    } else {
+        const summaryIndex = summaries.findIndex(s => s.date === diary.date);
+        const newSummary = {
+            date: diary.date,
+            result: diary.gameInfo.result,
+            opponentTeam: diary.gameInfo.opponentTeam
+        };
+
+        if (summaryIndex !== -1) {
+            summaries[summaryIndex] = newSummary;
+        } else {
+            summaries.push(newSummary);
+        }
+    }
+    saveSummaries(summaries);
+};
+
+
 // GET /api/diaries/:date
 router.get('/:date', (req, res) => {
     const { date } = req.params;
@@ -32,6 +91,20 @@ router.get('/:date', (req, res) => {
         return res.status(404).json({ message: 'Diary not found' });
     }
     res.json(diary);
+});
+
+// GET /api/diaries/month/:year/:month
+router.get('/month/:year/:month', (req, res) => {
+    const { year, month } = req.params;
+    // month is 1-based string, e.g., "1", "12"
+    // Pad month to 2 digits for string comparison
+    const paddedMonth = String(month).padStart(2, '0');
+    const prefix = `${year}-${paddedMonth}`;
+
+    const summaries = getSummaries();
+    const monthlySummaries = summaries.filter(s => s.date.startsWith(prefix));
+
+    res.json(monthlySummaries);
 });
 
 // POST /api/diaries
@@ -55,6 +128,7 @@ router.post('/', (req, res) => {
 
     diaries.push(newDiary);
     saveDiaries(diaries);
+    updateSummary(newDiary); // Sync Summary
 
     res.status(201).json(newDiary);
 });
@@ -85,6 +159,7 @@ router.put('/:date', (req, res) => {
 
     diaries[diaryIndex] = updatedDiary;
     saveDiaries(diaries);
+    updateSummary(updatedDiary); // Sync Summary
 
     res.json(updatedDiary);
 });
@@ -102,6 +177,7 @@ router.delete('/:date', (req, res) => {
     }
 
     saveDiaries(diaries);
+    updateSummary({ date }, true); // Sync Summary (Delete)
     res.json({ success: true });
 });
 

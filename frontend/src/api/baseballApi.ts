@@ -1,4 +1,4 @@
-import type { Diary } from '../types/Diary';
+import type { Diary, DiarySummary } from '../types/Diary';
 
 const BASE_URL = 'http://localhost:3000/api';
 
@@ -109,6 +109,18 @@ export const baseballApi = {
         } catch (error) {
             console.error(error);
             return false;
+        }
+    },
+
+    // Get Monthly Summaries
+    getMonthlySummaries: async (year: number, month: number): Promise<DiarySummary[]> => {
+        try {
+            const res = await fetch(`${BASE_URL}/diaries/month/${year}/${month}`);
+            if (!res.ok) throw new Error('Failed to fetch monthly summaries');
+            return await res.json();
+        } catch (error) {
+            console.error(error);
+            return [];
         }
     }
 };

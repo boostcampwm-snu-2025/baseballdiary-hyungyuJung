@@ -9,6 +9,7 @@ const HomePage: React.FC = () => {
     const [currentDate, setCurrentDate] = React.useState(new Date());
     const [isModalOpen, setIsModalOpen] = React.useState(false);
     const [selectedDate, setSelectedDate] = React.useState<Date | null>(null);
+    const [refreshKey, setRefreshKey] = React.useState(0);
 
     const handlePrevMonth = () => {
         setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1));
@@ -26,6 +27,7 @@ const HomePage: React.FC = () => {
     const handleCloseModal = () => {
         setIsModalOpen(false);
         setSelectedDate(null);
+        setRefreshKey(prev => prev + 1); // Trigger calendar refresh
     };
 
     return (
@@ -40,6 +42,7 @@ const HomePage: React.FC = () => {
                 <CalendarGrid
                     currentDate={currentDate}
                     onDateClick={handleDateClick}
+                    refreshKey={refreshKey}
                 />
             </main>
 
