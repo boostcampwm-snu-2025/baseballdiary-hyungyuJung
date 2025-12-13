@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { KBO_TEAMS } from '../../constants/baseball';
 import { baseballApi } from '../../api/baseballApi';
 
 const Header: React.FC = () => {
     const [myTeam, setMyTeam] = useState<string>('');
+    const location = useLocation();
 
     useEffect(() => {
         const fetchTeam = async () => {
@@ -23,9 +25,25 @@ const Header: React.FC = () => {
 
     return (
         <header className="fixed top-0 left-0 w-full h-16 bg-bg-secondary border-b border-bg-tertiary flex items-center justify-between px-4 z-50">
-            <h1 className="text-xl font-bold text-text-accent">
-                ⚾️ KBO Baseball Diary
-            </h1>
+            <div className="flex items-center gap-6">
+                <Link to="/" className="text-xl font-bold text-text-accent hover:text-brand-primary transition-colors">
+                    ⚾️ KBO Baseball Diary
+                </Link>
+                <nav className="hidden md:flex gap-4 text-sm font-medium">
+                    <Link
+                        to="/"
+                        className={`hover:text-brand-primary transition-colors ${location.pathname === '/' ? 'text-brand-primary' : 'text-text-secondary'}`}
+                    >
+                        캘린더
+                    </Link>
+                    <Link
+                        to="/statistics"
+                        className={`hover:text-brand-primary transition-colors ${location.pathname === '/statistics' ? 'text-brand-primary' : 'text-text-secondary'}`}
+                    >
+                        기록실
+                    </Link>
+                </nav>
+            </div>
 
             <div className="flex items-center gap-3">
                 <span className="text-sm text-text-secondary hidden sm:inline">My Team:</span>

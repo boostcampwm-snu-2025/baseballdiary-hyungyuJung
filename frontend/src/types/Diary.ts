@@ -31,3 +31,21 @@ export interface DiarySummary {
     result: GameResult;
     opponentTeam: string;
 }
+
+export interface StatsData {
+    games: number;
+    win: number;
+    draw: number;
+    loss: number;
+    totalScore: number;
+    totalOpponentScore: number;
+    winRate: number;
+    avgScore: number;
+    avgOpponentScore: number;
+}
+
+export interface StatisticsResponse {
+    overall: StatsData;
+    yearly: Record<string, StatsData>;
+    monthly: Record<string, StatsData>;
+}

@@ -1,4 +1,4 @@
-import type { Diary, DiarySummary } from '../types/Diary';
+import type { Diary, DiarySummary, StatisticsResponse } from '../types/Diary';
 
 const BASE_URL = 'http://localhost:3000/api';
 
@@ -121,6 +121,18 @@ export const baseballApi = {
         } catch (error) {
             console.error(error);
             return [];
+        }
+    },
+
+    // Get Statistics
+    getStatistics: async (): Promise<StatisticsResponse | null> => {
+        try {
+            const res = await fetch(`${BASE_URL}/statistics`);
+            if (!res.ok) throw new Error('Failed to fetch statistics');
+            return await res.json();
+        } catch (error) {
+            console.error(error);
+            return null;
         }
     }
 };

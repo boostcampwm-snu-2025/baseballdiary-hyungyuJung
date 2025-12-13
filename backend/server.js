@@ -6,6 +6,7 @@ const path = require('path');
 const userRoutes = require('./routes/userRoutes');
 const gameRoutes = require('./routes/gameRoutes');
 const diaryRoutes = require('./routes/diaryRoutes');
+const statisticsRoutes = require('./routes/statisticsRoutes'); // New Route
 
 const app = express();
 const PORT = 3000;
@@ -24,6 +25,7 @@ if (!fs.existsSync(DATA_DIR)) {
 app.use('/api/user', userRoutes);
 app.use('/api/games', gameRoutes);
 app.use('/api/diaries', diaryRoutes);
+app.use('/api/statistics', statisticsRoutes)
 
 app.listen(PORT, () => {
     console.log(`Backend server running at http://localhost:${PORT}`);
