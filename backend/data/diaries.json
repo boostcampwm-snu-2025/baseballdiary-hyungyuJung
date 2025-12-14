@@ -1,0 +1,78 @@
+[
+  {
+    "date": "2025-12-13",
+    "gameInfo": {
+      "myTeam": "Lotte Giants",
+      "opponentTeam": "Hanwha Eagles",
+      "myScore": 13,
+      "opponentScore": 16,
+      "result": "loss",
+      "stadium": "사직야구장",
+      "broadcaster": "MBC Sports+"
+    },
+    "viewingInfo": {
+      "type": "direct"
+    },
+    "content": "13점을 내고 지네 ㅠㅠ",
+    "id": "1765632986162",
+    "createdAt": "2025-12-13T13:36:26.162Z",
+    "updatedAt": "2025-12-13T13:36:26.162Z"
+  },
+  {
+    "date": "2025-12-01",
+    "gameInfo": {
+      "myTeam": "Lotte Giants",
+      "opponentTeam": "Doosan Bears",
+      "myScore": 11,
+      "opponentScore": 11,
+      "result": "draw",
+      "stadium": "사직야구장",
+      "broadcaster": "SBS Sports"
+    },
+    "viewingInfo": {
+      "type": "home"
+    },
+    "content": "비겼다",
+    "id": "1765634479308",
+    "createdAt": "2025-12-13T14:01:19.308Z",
+    "updatedAt": "2025-12-13T14:01:19.308Z"
+  },
+  {
+    "date": "2025-11-12",
+    "gameInfo": {
+      "myTeam": "Lotte Giants",
+      "opponentTeam": "Hanwha Eagles",
+      "myScore": 13,
+      "opponentScore": 16,
+      "result": "loss",
+      "stadium": "사직야구장",
+      "broadcaster": "MBC Sports+"
+    },
+    "viewingInfo": {
+      "type": "home"
+    },
+    "content": "ㅠㅠ 한화한테 지냐",
+    "id": "1765634513325",
+    "createdAt": "2025-12-13T14:01:53.325Z",
+    "updatedAt": "2025-12-13T14:01:53.325Z"
+  },
+  {
+    "date": "2025-12-16",
+    "gameInfo": {
+      "myTeam": "Lotte Giants",
+      "opponentTeam": "NC Dinos",
+      "myScore": 18,
+      "opponentScore": 14,
+      "result": "win",
+      "stadium": "창원NC파크",
+      "broadcaster": "MBC Sports+"
+    },
+    "viewingInfo": {
+      "type": "home"
+    },
+    "content": "데이터 변경 ㅋㅋㅋ",
+    "id": "1765639038351",
+    "createdAt": "2025-12-13T15:17:18.351Z",
+    "updatedAt": "2025-12-13T15:17:18.351Z"
+  }
+]

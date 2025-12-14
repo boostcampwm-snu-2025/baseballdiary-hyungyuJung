@@ -1,0 +1,407 @@
+[
+  {
+    "id": "KIA Tigers-vs-Samsung Lions",
+    "team1": "KIA Tigers",
+    "team2": "Samsung Lions",
+    "score1": 11,
+    "score2": 0,
+    "stadium": "광주기아챔피언스필드",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KIA Tigers-vs-LG Twins",
+    "team1": "KIA Tigers",
+    "team2": "LG Twins",
+    "score1": 1,
+    "score2": 18,
+    "stadium": "광주기아챔피언스필드",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "KIA Tigers-vs-Doosan Bears",
+    "team1": "KIA Tigers",
+    "team2": "Doosan Bears",
+    "score1": 9,
+    "score2": 12,
+    "stadium": "잠실야구장",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KIA Tigers-vs-KT Wiz",
+    "team1": "KIA Tigers",
+    "team2": "KT Wiz",
+    "score1": 4,
+    "score2": 14,
+    "stadium": "광주기아챔피언스필드",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "KIA Tigers-vs-SSG Landers",
+    "team1": "KIA Tigers",
+    "team2": "SSG Landers",
+    "score1": 0,
+    "score2": 11,
+    "stadium": "SSG 랜더스필드",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KIA Tigers-vs-Lotte Giants",
+    "team1": "KIA Tigers",
+    "team2": "Lotte Giants",
+    "score1": 14,
+    "score2": 18,
+    "stadium": "사직야구장",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KIA Tigers-vs-Hanwha Eagles",
+    "team1": "KIA Tigers",
+    "team2": "Hanwha Eagles",
+    "score1": 16,
+    "score2": 9,
+    "stadium": "힌화생명 이글스파크",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KIA Tigers-vs-NC Dinos",
+    "team1": "KIA Tigers",
+    "team2": "NC Dinos",
+    "score1": 8,
+    "score2": 13,
+    "stadium": "광주기아챔피언스필드",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KIA Tigers-vs-Kiwoom Heroes",
+    "team1": "KIA Tigers",
+    "team2": "Kiwoom Heroes",
+    "score1": 15,
+    "score2": 19,
+    "stadium": "광주기아챔피언스필드",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Samsung Lions-vs-LG Twins",
+    "team1": "Samsung Lions",
+    "team2": "LG Twins",
+    "score1": 3,
+    "score2": 19,
+    "stadium": "대구삼성라이온즈파크",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Samsung Lions-vs-Doosan Bears",
+    "team1": "Samsung Lions",
+    "team2": "Doosan Bears",
+    "score1": 5,
+    "score2": 7,
+    "stadium": "대구삼성라이온즈파크",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "Samsung Lions-vs-KT Wiz",
+    "team1": "Samsung Lions",
+    "team2": "KT Wiz",
+    "score1": 13,
+    "score2": 3,
+    "stadium": "대구삼성라이온즈파크",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Samsung Lions-vs-SSG Landers",
+    "team1": "Samsung Lions",
+    "team2": "SSG Landers",
+    "score1": 2,
+    "score2": 2,
+    "stadium": "대구삼성라이온즈파크",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "Samsung Lions-vs-Lotte Giants",
+    "team1": "Samsung Lions",
+    "team2": "Lotte Giants",
+    "score1": 14,
+    "score2": 1,
+    "stadium": "대구삼성라이온즈파크",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Samsung Lions-vs-Hanwha Eagles",
+    "team1": "Samsung Lions",
+    "team2": "Hanwha Eagles",
+    "score1": 7,
+    "score2": 9,
+    "stadium": "대구삼성라이온즈파크",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "Samsung Lions-vs-NC Dinos",
+    "team1": "Samsung Lions",
+    "team2": "NC Dinos",
+    "score1": 18,
+    "score2": 1,
+    "stadium": "대구삼성라이온즈파크",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Samsung Lions-vs-Kiwoom Heroes",
+    "team1": "Samsung Lions",
+    "team2": "Kiwoom Heroes",
+    "score1": 11,
+    "score2": 19,
+    "stadium": "고척스카이돔",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "LG Twins-vs-Doosan Bears",
+    "team1": "LG Twins",
+    "team2": "Doosan Bears",
+    "score1": 10,
+    "score2": 9,
+    "stadium": "잠실야구장",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "LG Twins-vs-KT Wiz",
+    "team1": "LG Twins",
+    "team2": "KT Wiz",
+    "score1": 11,
+    "score2": 13,
+    "stadium": "수원KT위즈파크",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "LG Twins-vs-SSG Landers",
+    "team1": "LG Twins",
+    "team2": "SSG Landers",
+    "score1": 12,
+    "score2": 2,
+    "stadium": "잠실야구장",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "LG Twins-vs-Lotte Giants",
+    "team1": "LG Twins",
+    "team2": "Lotte Giants",
+    "score1": 1,
+    "score2": 5,
+    "stadium": "잠실야구장",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "LG Twins-vs-Hanwha Eagles",
+    "team1": "LG Twins",
+    "team2": "Hanwha Eagles",
+    "score1": 9,
+    "score2": 3,
+    "stadium": "잠실야구장",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "LG Twins-vs-NC Dinos",
+    "team1": "LG Twins",
+    "team2": "NC Dinos",
+    "score1": 18,
+    "score2": 9,
+    "stadium": "창원NC파크",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "LG Twins-vs-Kiwoom Heroes",
+    "team1": "LG Twins",
+    "team2": "Kiwoom Heroes",
+    "score1": 8,
+    "score2": 3,
+    "stadium": "잠실야구장",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Doosan Bears-vs-KT Wiz",
+    "team1": "Doosan Bears",
+    "team2": "KT Wiz",
+    "score1": 10,
+    "score2": 1,
+    "stadium": "수원KT위즈파크",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Doosan Bears-vs-SSG Landers",
+    "team1": "Doosan Bears",
+    "team2": "SSG Landers",
+    "score1": 7,
+    "score2": 5,
+    "stadium": "ssg랜더스필드",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "Doosan Bears-vs-Lotte Giants",
+    "team1": "Doosan Bears",
+    "team2": "Lotte Giants",
+    "score1": 11,
+    "score2": 11,
+    "stadium": "사직야구장",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "Doosan Bears-vs-Hanwha Eagles",
+    "team1": "Doosan Bears",
+    "team2": "Hanwha Eagles",
+    "score1": 7,
+    "score2": 17,
+    "stadium": "한화생명 이글스파크",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "Doosan Bears-vs-NC Dinos",
+    "team1": "Doosan Bears",
+    "team2": "NC Dinos",
+    "score1": 14,
+    "score2": 6,
+    "stadium": "창원NC파크",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "Doosan Bears-vs-Kiwoom Heroes",
+    "team1": "Doosan Bears",
+    "team2": "Kiwoom Heroes",
+    "score1": 12,
+    "score2": 9,
+    "stadium": "잠실야구장",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "KT Wiz-vs-SSG Landers",
+    "team1": "KT Wiz",
+    "team2": "SSG Landers",
+    "score1": 7,
+    "score2": 17,
+    "stadium": "ssg랜더스필드",
+    "broadcaster": "SPOTV"
+  },
+  {
+    "id": "KT Wiz-vs-Lotte Giants",
+    "team1": "KT Wiz",
+    "team2": "Lotte Giants",
+    "score1": 13,
+    "score2": 6,
+    "stadium": "사직야구장",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KT Wiz-vs-Hanwha Eagles",
+    "team1": "KT Wiz",
+    "team2": "Hanwha Eagles",
+    "score1": 5,
+    "score2": 13,
+    "stadium": "수원KT위즈파크",
+    "broadcaster": "KBS N Sports"
+  },
+  {
+    "id": "KT Wiz-vs-NC Dinos",
+    "team1": "KT Wiz",
+    "team2": "NC Dinos",
+    "score1": 3,
+    "score2": 3,
+    "stadium": "창원NC파크",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "KT Wiz-vs-Kiwoom Heroes",
+    "team1": "KT Wiz",
+    "team2": "Kiwoom Heroes",
+    "score1": 12,
+    "score2": 13,
+    "stadium": "고척스카이돔",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "SSG Landers-vs-Lotte Giants",
+    "team1": "SSG Landers",
+    "team2": "Lotte Giants",
+    "score1": 10,
+    "score2": 6,
+    "stadium": "사직야구장",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "SSG Landers-vs-Hanwha Eagles",
+    "team1": "SSG Landers",
+    "team2": "Hanwha Eagles",
+    "score1": 0,
+    "score2": 8,
+    "stadium": "한화생명 이글스파크",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "SSG Landers-vs-NC Dinos",
+    "team1": "SSG Landers",
+    "team2": "NC Dinos",
+    "score1": 5,
+    "score2": 16,
+    "stadium": "창원NC파크",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "SSG Landers-vs-Kiwoom Heroes",
+    "team1": "SSG Landers",
+    "team2": "Kiwoom Heroes",
+    "score1": 1,
+    "score2": 18,
+    "stadium": "고척스카이돔",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "Lotte Giants-vs-Hanwha Eagles",
+    "team1": "Lotte Giants",
+    "team2": "Hanwha Eagles",
+    "score1": 13,
+    "score2": 16,
+    "stadium": "사직야구장",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "Lotte Giants-vs-NC Dinos",
+    "team1": "Lotte Giants",
+    "team2": "NC Dinos",
+    "score1": 12,
+    "score2": 14,
+    "stadium": "창원NC파크",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "Lotte Giants-vs-Kiwoom Heroes",
+    "team1": "Lotte Giants",
+    "team2": "Kiwoom Heroes",
+    "score1": 7,
+    "score2": 10,
+    "stadium": "고척스카이돔",
+    "broadcaster": "SBS Sports"
+  },
+  {
+    "id": "Hanwha Eagles-vs-NC Dinos",
+    "team1": "Hanwha Eagles",
+    "team2": "NC Dinos",
+    "score1": 5,
+    "score2": 13,
+    "stadium": "한화생명 이글스파크",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "Hanwha Eagles-vs-Kiwoom Heroes",
+    "team1": "Hanwha Eagles",
+    "team2": "Kiwoom Heroes",
+    "score1": 11,
+    "score2": 4,
+    "stadium": "한화생명 이글스파크",
+    "broadcaster": "MBC Sports+"
+  },
+  {
+    "id": "NC Dinos-vs-Kiwoom Heroes",
+    "team1": "NC Dinos",
+    "team2": "Kiwoom Heroes",
+    "score1": 17,
+    "score2": 7,
+    "stadium": "창원NC파크",
+    "broadcaster": "MBC Sports+"
+  }
+]

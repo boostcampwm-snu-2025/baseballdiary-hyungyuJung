@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  /* Clean White Theme Colors */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F3F4F6;
+  /* Gray-100 */
+  --bg-tertiary: #E5E7EB;
+  /* Gray-200 */
+
+  --text-primary: #111827;
+  /* Gray-900 */
+  --text-secondary: #4B5563;
+  /* Gray-600 */
+  --text-accent: #000000;
+
+  /* Baseball-specific Accents - Refined per user request */
+  --accent-win: #10B981;
+  /* Emerald-500 (Green) */
+  --accent-draw: #9CA3AF;
+  /* Gray-400 (Gray) */
+  --accent-loss: #EF4444;
+  /* Red-500 (Red) */
+  --accent-cancel: #D1D5DB;
+  /* Gray-300 */
+
+  /* Brand/Interactive */
+  --brand-primary: #2563EB;
+  /* Blue-600 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
