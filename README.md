@@ -5,9 +5,10 @@
 > 매일 열리는 야구 경기, 휘발되는 감동을 기록하고 나의 직관 승률을 확인하세요.
 
 ## 📅 Project Overview
-* **프로젝트 기간**: 2025.11.25 ~ 2025.12.16 (SNU 25-2 [컴퓨터 및 VLSI특강:AI를 활용한 front-end 개발] 수업 기말 프로젝트)
+* **프로젝트 기간**: 2025.11.25 ~ 2025.12.15 (SNU 25-2 [컴퓨터 및 VLSI특강:AI를 활용한 front-end 개발] 수업 기말 프로젝트)
 * **한줄 소개**: KBO 경기 결과 자동 연동을 지원하는 야구 관람 다이어리 웹 서비스
-* **데모**: (추후 추가 예정)
+* **데모**:
+  🎞️ [드라이브 링크](https://drive.google.com/file/d/1XycqA40CyzGriD2L8RVqhOis05U2pFax/view?usp=sharing)
 
 ## 🎯 Key Features
 
@@ -26,16 +27,31 @@
 ## 🛠 Tech Stack
 
 ### Frontend
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat&logo=Tailwind CSS&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=Vite&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=reactrouter&logoColor=white"/>
+
+### Backend
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=Node.js&logoColor=white"/> <img src="https://img.shields.io/badge/Express-000000?style=flat&logo=Express&logoColor=white"/>
 
 ## 🚀 Setup
 
-Run the following commands to start the development server:
+The project consists of a **Frontend** (React + Vite) and a **Backend** (Node.js + Express). You need to run both concurrently.
+
+### 1. Backend Setup
+Navigate to the `backend` directory, install dependencies, and start the server.
 
 ```bash
-# Install dependencies
+cd backend
 npm install
+node ./server.js
+# Server runs on http://localhost:5000 (check your server configuration)
+```
 
-# Start development server
+### 2. Frontend Setup
+Open a new terminal, navigate to the `frontend` directory, install dependencies, and start the development server.
+
+```bash
+cd frontend
+npm install
 npm run dev
+# Client runs on http://localhost:5173 (default Vite port)
 ```
